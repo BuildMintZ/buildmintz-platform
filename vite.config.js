@@ -1,17 +1,11 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/',
+  // Set base to your repository name
+  base: '/buildmintz/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: []
-        }
-      }
-    }
   },
   server: {
     port: 3000,
